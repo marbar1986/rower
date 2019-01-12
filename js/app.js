@@ -18,6 +18,8 @@ $(function() {
     $(".spray_efect").css("height","50px");
   }
 
+
+
   start_rider = setInterval ( () => {
     $(".logo").addClass("logo__animation");
     start_rider2 = setInterval ( () => {
@@ -114,10 +116,20 @@ $(".frame__pic__color__choice__blue").on("click",function(){
     $(".spray__animation").css("background-position","10px");
     startSprayAnimation(spray_animation_step2,spray_animation_max2,blue_animation,spray_animation_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation").css("margin-top","15px");
-  $(".spray__animation").css("margin-left","-6%");
+  $(".spray__animation").css("margin-left","-8%");
   $(".spray__animation").css("background-position","10px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,blue_animation,spray_animation_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation").css("margin-left","-10%");
+  $(".spray__animation").css("margin-top","15px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,blue_animation,spray_animation_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation").css("margin-left","-18%");
+  $(".spray__animation").css("margin-top","15px");
   startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,blue_animation,spray_animation_pic3);
 }
 else {
@@ -131,10 +143,20 @@ $(".frame__pic__color__choice__green").on("click",function(){
     $(".spray__animation").css("margin-top","50px");
     startSprayAnimation(spray_animation_step2,spray_animation_max2,green_animation,spray_animation_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation").css("margin-top","15px");
   $(".spray__animation").css("margin-left","0%");
   $(".spray__animation").css("background-position","10px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,green_animation,spray_animation_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation").css("margin-left","-4%");
+  $(".spray__animation").css("margin-top","15px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,green_animation,spray_animation_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation").css("margin-left","-10%");
+  $(".spray__animation").css("margin-top","15px");
   startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,green_animation,spray_animation_pic3);
 }
 else{
@@ -148,10 +170,20 @@ $(".frame__pic__color__choice__red").on("click",function(){
     $(".spray__animation").css("margin-top","80px");
     startSprayAnimation(spray_animation_step2,spray_animation_max2,red_animation,spray_animation_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation").css("margin-top","15px");
-  $(".spray__animation").css("margin-left","-6%");
+  $(".spray__animation").css("margin-left","-8%");
   $(".spray__animation").css("background-position","10px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,red_animation,spray_animation_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation").css("margin-left","-10%");
+  $(".spray__animation").css("margin-top","15px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,red_animation,spray_animation_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation").css("margin-left","-18%");
+  $(".spray__animation").css("margin-top","15px");
   startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,red_animation,spray_animation_pic3);
 }
 else{
@@ -165,10 +197,20 @@ $(".frame__pic__color__choice__black").on("click",function(){
     $(".spray__animation").css("margin-top","80px");
     startSprayAnimation(spray_animation_step2,spray_animation_max2,black_animation,spray_animation_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation").css("margin-top","15px");
   $(".spray__animation").css("margin-left","0%");
   $(".spray__animation").css("background-position","10px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,black_animation,spray_animation_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation").css("margin-left","-4%");
+  $(".spray__animation").css("margin-top","15px");
+  startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,black_animation,spray_animation_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation").css("margin-left","-10%");
+  $(".spray__animation").css("margin-top","15px");
   startSprayAnimationWidth(spray_animation_step2,spray_animation_max2,black_animation,spray_animation_pic3);
 }
 else{
@@ -224,16 +266,26 @@ else{
 
 
 $(".wheels__pic__color__choice__blue").on("click",function(){
-  $(".spray__animation2").css("margin-top","100px");
   $('.wheels__pic').attr("data-wheels","blue");
+  $(".spray__animation2").css("margin-top","100px");
   if(vpw < 800 && vpw > 500){
     $(".spray__animation2").css("margin-top","50px");
     startSprayAnimation2(spray_animation2_step2,spray_animation2_max2,blue_animation,spray_animation2_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation2").css("margin-top","15px");
-  $(".spray__animation2").css("margin-left","-6%");
+  $(".spray__animation2").css("margin-left","-8%");
   $(".spray__animation2").css("background-position","10px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,blue_animation,spray_animation2_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation2").css("margin-left","-10%");
+  $(".spray__animation2").css("margin-top","15px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,blue_animation,spray_animation2_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation2").css("margin-left","-18%");
+  $(".spray__animation2").css("margin-top","15px");
   startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,blue_animation,spray_animation2_pic3);
 }
 else{
@@ -242,16 +294,26 @@ else{
 }
 })
 $(".wheels__pic__color__choice__green").on("click",function(){
-  $(".spray__animation2").css("margin-top","100px");
   $('.wheels__pic').attr("data-wheels","green");
+  $(".spray__animation2").css("margin-top","100px");
   if(vpw < 800 && vpw > 500){
     $(".spray__animation2").css("margin-top","50px");
     startSprayAnimation2(spray_animation2_step2,spray_animation2_max2,green_animation,spray_animation2_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation2").css("margin-top","15px");
   $(".spray__animation2").css("margin-left","0%");
   $(".spray__animation2").css("background-position","10px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,green_animation,spray_animation2_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation2").css("margin-left","-4%");
+  $(".spray__animation2").css("margin-top","15px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,green_animation,spray_animation2_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation2").css("margin-left","-10%");
+  $(".spray__animation2").css("margin-top","15px");
   startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,green_animation,spray_animation2_pic3);
 }
 else{
@@ -266,10 +328,20 @@ $(".wheels__pic__color__choice__red").on("click",function(){
     $(".spray__animation2").css("margin-top","80px");
     startSprayAnimation2(spray_animation2_step2,spray_animation2_max2,red_animation,spray_animation2_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation2").css("margin-top","15px");
-  $(".spray__animation2").css("margin-left","-6%");
+  $(".spray__animation2").css("margin-left","-8%");
   $(".spray__animation2").css("background-position","10px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,red_animation,spray_animation2_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation2").css("margin-left","-10%");
+  $(".spray__animation2").css("margin-top","15px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,red_animation,spray_animation2_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation2").css("margin-left","-18%");
+  $(".spray__animation2").css("margin-top","15px");
   startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,red_animation,spray_animation2_pic3);
 }
 else{
@@ -283,10 +355,20 @@ $(".wheels__pic__color__choice__black").on("click",function(){
     $(".spray__animation2").css("margin-top","80px");
     startSprayAnimation2(spray_animation2_step2,spray_animation2_max2,black_animation,spray_animation2_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation2").css("margin-top","15px");
   $(".spray__animation2").css("margin-left","0%");
   $(".spray__animation2").css("background-position","10px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,black_animation,spray_animation2_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation2").css("margin-left","-4%");
+  $(".spray__animation2").css("margin-top","-15px");
+  startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,black_animation,spray_animation2_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation2").css("margin-left","-10%");
+  $(".spray__animation2").css("margin-top","-15px");
   startSprayAnimationWidth2(spray_animation2_step2,spray_animation2_max2,black_animation,spray_animation2_pic3);
 }
 else{
@@ -344,16 +426,26 @@ else{
 }
 
 $(".steering_wheel__pic__color__choice__blue").on("click",function(){
-  $('.steering_wheel__pic').attr("data-frame","blue");
+  $('.steering_wheel__pic').attr("data-steering_wheel","blue");
   $(".spray__animation4").css("margin-top","100px");
   if(vpw < 800 && vpw > 500){
     $(".spray__animation4").css("margin-top","80px");
     startSprayAnimation4(spray_animation4_step2,spray_animation4_max2,blue_animation,spray_animation4_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation4").css("margin-top","15px");
-  $(".spray__animation4").css("margin-left","-6%");
+  $(".spray__animation4").css("margin-left","-8%");
   $(".spray__animation4").css("background-position","10px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,blue_animation,spray_animation4_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation4").css("margin-left","-20%");
+  $(".spray__animation4").css("margin-top","15px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,blue_animation,spray_animation4_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation4").css("margin-left","-26%");
+  $(".spray__animation4").css("margin-top","15px");
   startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,blue_animation,spray_animation4_pic3);
 }
 else{
@@ -362,16 +454,26 @@ else{
 }
 })
 $(".steering_wheel__pic__color__choice__green").on("click",function(){
-  $('.steering_wheel__pic').attr("data-frame","green");
+  $('.steering_wheel__pic').attr("data-steering_wheel","green");
   $(".spray__animation4").css("margin-top","100px");
   if(vpw < 800 && vpw > 500){
     $(".spray__animation4").css("margin-top","80px");
     startSprayAnimation4(spray_animation4_step2,spray_animation4_max2,green_animation,spray_animation4_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation4").css("margin-top","15px");
   $(".spray__animation4").css("margin-left","0%");
   $(".spray__animation4").css("background-position","10px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,green_animation,spray_animation4_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation4").css("margin-left","-14%");
+  $(".spray__animation4").css("margin-top","15px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,green_animation,spray_animation4_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation4").css("margin-left","-20%");
+  $(".spray__animation4").css("margin-top","15px");
   startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,green_animation,spray_animation4_pic3);
 }
 else{
@@ -386,10 +488,20 @@ $(".steering_wheel__pic__color__choice__red").on("click",function(){
     $(".spray__animation4").css("margin-top","80px");
     startSprayAnimation4(spray_animation4_step2,spray_animation4_max2,red_animation,spray_animation4_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation4").css("margin-top","15px");
-  $(".spray__animation4").css("margin-left","-6%");
+  $(".spray__animation4").css("margin-left","-8%");
   $(".spray__animation4").css("background-position","10px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,red_animation,spray_animation4_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation4").css("margin-left","-20%");
+  $(".spray__animation4").css("margin-top","15px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,red_animation,spray_animation4_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation4").css("margin-left","-26%");
+  $(".spray__animation4").css("margin-top","15px");
   startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,red_animation,spray_animation4_pic3);
 }
 else{
@@ -403,10 +515,20 @@ $(".steering_wheel__pic__color__choice__black").on("click",function(){
     $(".spray__animation4").css("margin-top","80px");
     startSprayAnimation4(spray_animation4_step2,spray_animation4_max2,black_animation,spray_animation4_pic2);
 }
-else if(vpw < 500){
+else if(vpw < 500 && vpw > 400){
   $(".spray__animation4").css("margin-top","15px");
   $(".spray__animation4").css("margin-left","0%");
   $(".spray__animation4").css("background-position","10px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,black_animation,spray_animation4_pic3);
+}
+else if(vpw < 400 && vpw > 300){
+  $(".spray__animation4").css("margin-left","-14%");
+  $(".spray__animation4").css("margin-top","15px");
+  startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,black_animation,spray_animation4_pic3);
+}
+else if(vpw < 300 && vpw > 200){
+  $(".spray__animation4").css("margin-left","-20%");
+  $(".spray__animation4").css("margin-top","15px");
   startSprayAnimationWidth3(spray_animation4_step2,spray_animation4_max2,black_animation,spray_animation4_pic3);
 }
 else{
