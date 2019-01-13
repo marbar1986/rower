@@ -144,385 +144,151 @@ a{
   }
 }
 
+.elements__text{
+  height:100px;
+  font-size: 50px;
+  line-height: 100px;
+  text-align: center;
+  color:white;
+  text-shadow: 1px 1px 2px darkgrey, 0 0 5px white, 0 0 5px black;
+  @media (max-width:800px) {
+    font-size: 30px;
+  }
+  @media (max-width:330px) {
+    font-size: 18px;
+  }
+}
 
+
+.frame__pic, .wheels__pic, .steering_wheel__pic{
+  height:550px;
+  background-image: url("../images/zapytanie.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:40% 40%;
+  @media (max-width:800px) {
+    height:350px;
+    background-size:40% 20%;
+    margin-top: -40px;
+  }
+  @media (max-width:500px) {
+    height:200px;
+    background-size:40% 20%;
+    margin-top: -40px;
+  }
+  &__color{
+    height:550px;
+    @media (max-width:800px) {
+      height:350px;
+    }
+    @media (max-width:500px) {
+      height:250px;
+      margin-left: 40%;
+      margin-top:-50px;
+    }
+    &__choice{
+      height:110px;
+      width: 20%;
+      margin-top: 220px;
+      border: 5px solid #a1a39f;
+      border-style: ridge;
+      @media (max-width:800px) {
+        height:70px;
+        margin-top: 100px;
+      }
+      @media (max-width:500px) {
+        width:20%;
+      }
+      &__blue{
+        height:50px;
+        background-color:blue;
+        border:5px solid #a1a39f;
+        border-style: ridge;
+        cursor:url("../images/spray_blue.png"), auto;
+        @media (max-width:800px) {
+          height:30px;
+        }
+      }
+      &__green{
+        height:50px;
+        background-color:green;
+        border:5px solid #a1a39f;
+        border-style: ridge;
+        cursor:url("../images/spray_green.png"), auto;
+        @media (max-width:800px) {
+          height:30px;
+        }
+      }
+      &__red{
+        height:50px;
+        background-color:red;
+        border:5px solid #a1a39f;
+        border-style: ridge;
+        cursor:url("../images/spray_red.png"), auto;
+        @media (max-width:800px) {
+          height:30px;
+        }
+      }
+      &__black{
+        height:50px;
+        background-color:black;
+        border:5px solid #a1a39f;
+        border-style: ridge;
+        cursor:url("../images/spray_black.png"), auto;
+        @media (max-width:800px) {
+          height:30px;
+        }
+      }
+
+    }
+  }
+}
+.steering_wheel__pic{
+&__color{
+  &__choice{
+    @media (max-width:500px) {
+      width:40%;
+      margin-top: 85px;
+    }
+  }
+}
+}
+
+.spray__animation, .spray__animation2, .spray__animation4{
+  display:block;
+  margin-top:100px;
+  height:250px;
+  width:100px;
+  @media (max-width:800px) {
+    height:125px;
+    width:50px;
+  }
+  @media (max-width:500px) {
+    height:50px;
+    width:125px;
+  }
+}
+#frame,#wheels, #steering_wheel{
+  width:100%;
+  height:650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow:3px 3px 5px 8px grey;
+  @media (max-width:800px) {
+    height:450px;
+  }
+}
 
 #frame{
-  width:100%;
-  height:650px;
   background-image: url("../images/bg_frame.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow:3px 3px 5px 8px grey;
-  @media (max-width:800px) {
-    height:450px;
-  }
-  // @media (max-width:500px) {
-  //   height:650px;
-  // }
-  .spray__animation{
-    display:block;
-    // border:1px solid red;
-    margin-top:100px;
-    height:250px;
-    width:100px;
-    @media (max-width:800px) {
-      height:125px;
-      width:50px;
-    }
-    @media (max-width:500px) {
-      height:50px;
-      width:125px;
-    }
-  }
-  .frame__text{
-    height:100px;
-    font-size: 50px;
-    line-height: 100px;
-    text-align: center;
-    color:white;
-    text-shadow: 1px 1px 2px darkgrey, 0 0 5px white, 0 0 5px black;
-    @media (max-width:800px) {
-      font-size: 30px;
-    }
-    @media (max-width:330px) {
-      font-size: 18px;
-    }
-  }
-  .frame__pic{
-    height:550px;
-    background-image: url("../images/zapytanie.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:40% 40%;
-    @media (max-width:800px) {
-      height:350px;
-      background-size:40% 20%;
-      margin-top: -40px;
-    }
-    @media (max-width:500px) {
-      height:200px;
-      background-size:40% 20%;
-      margin-top: -40px;
-    }
-    &__color{
-      @media (max-width:800px) {
-        height:150px;
-      }
-      @media (max-width:500px) {
-        height:150px;
-        margin-left: 40%;
-        margin-top: -50px;
-      }
-      height:550px;
-      &__choice{
-        height:110px;
-        width: 20%;
-        margin-top: 220px;
-        border: 5px solid #a1a39f;
-        border-style: ridge;
-        @media (max-width:800px) {
-          height:70px;
-          margin-top: 100px;
-        }
-        &__blue{
-          height:50px;
-          background-color:blue;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_blue.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__green{
-          height:50px;
-          background-color:green;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_green.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__red{
-          height:50px;
-          background-color:red;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_red.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__black{
-          height:50px;
-          background-color:black;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_black.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-
-      }
-    }
-  }
 }
-
 #wheels{
-  width:100%;
-  height:650px;
   background-image: url("../images/bg_wheels.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow:3px 3px 5px 8px grey;
-  @media (max-width:800px) {
-    height:450px;
-  }
-  // @media (max-width:500px) {
-  //   height:650px;
-  // }
-  .spray__animation2{
-    margin-top:100px;
-    height:250px;
-    width:100px;
-    @media (max-width:800px) {
-      height:125px;
-      width:50px;
-    }
-    @media (max-width:500px) {
-      height:50px;
-      width:125px;
-    }
-  }
-  .wheels__text{
-    height:100px;
-    font-size: 50px;
-    line-height: 100px;
-    text-align: center;
-    color:white;
-    text-shadow: 1px 1px 2px darkgrey, 0 0 5px white, 0 0 5px black;
-    @media (max-width:800px) {
-      font-size: 30px;
-    }
-    @media (max-width:330px) {
-      font-size: 18px;
-    }
-  }
-  .wheels__pic{
-    height:550px;
-    background-image: url("../images/zapytanie.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:40% 40%;
-    @media (max-width:800px) {
-      height:350px;
-      background-size:40% 20%;
-      margin-top: -40px;
-    }
-    @media (max-width:500px) {
-      height:200px;
-      background-size:40% 20%;
-      margin-top: -40px;
-    }
-    &__color{
-      height:550px;
-      @media (max-width:800px) {
-        height:350px;
-      }
-      @media (max-width:500px) {
-        height:150px;
-        margin-left: 40%;
-        margin-top:-50px;
-      }
-      &__choice{
-        height:110px;
-        width: 20%;
-        margin-top: 220px;
-        border: 5px solid #a1a39f;
-        border-style: ridge;
-        @media (max-width:800px) {
-          height:70px;
-          margin-top: 100px;
-        }
-        &__blue{
-          height:50px;
-          background-color:blue;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_blue.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__green{
-          height:50px;
-          background-color:green;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_green.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__red{
-          height:50px;
-          background-color:red;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_red.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__black{
-          height:50px;
-          background-color:black;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_black.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-
-      }
-    }
-  }
 }
-
-
-
 #steering_wheel{
-  width:100%;
-  height:650px;
   background-image: url("../images/bg_steering.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  box-shadow:3px 3px 5px 8px grey;
-  @media (max-width:800px) {
-    height:450px;
-  }
-  // @media (max-width:500px) {
-  //   height:650px;
-  // }
-  .spray__animation4{
-    margin-top:100px;
-    height:250px;
-    width:100px;
-    @media (max-width:800px) {
-      height:125px;
-      width:50px;
-    }
-    @media (max-width:500px) {
-      height:50px;
-      width:125px;
-    }
-  }
-  .steering_wheel__text{
-    height:100px;
-    font-size: 50px;
-    line-height: 100px;
-    text-align: center;
-    color:white;
-    text-shadow: 1px 1px 2px darkgrey, 0 0 5px white, 0 0 5px black;
-    @media (max-width:800px) {
-      font-size: 30px;
-    }
-    @media (max-width:330px) {
-      font-size: 18px;
-    }
-  }
-  .steering_wheel__pic{
-    height:550px;
-    background-image: url("../images/zapytanie.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:40% 40%;
-    @media (max-width:800px) {
-      height:350px;
-      background-size:40% 20%;
-      margin-top: -40px;
-    }
-    @media (max-width:500px) {
-      height:200px;
-      background-size:40% 20%;
-      margin-top: -40px;
-    }
-    &__color{
-      height:550px;
-      @media (max-width:800px) {
-        height:350px;
-      }
-      @media (max-width:500px) {
-        height:250px;
-        margin-left: 40%;
-        margin-top:-50px;
-      }
-      &__choice{
-        height:110px;
-        width: 20%;
-        margin-top: 220px;
-        border: 5px solid #a1a39f;
-        border-style: ridge;
-        @media (max-width:800px) {
-          height:70px;
-          margin-top: 100px;
-        }
-        @media (max-width:500px) {
-          width:40%;
-        }
-        &__blue{
-          height:50px;
-          background-color:blue;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_blue.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__green{
-          height:50px;
-          background-color:green;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_green.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__red{
-          height:50px;
-          background-color:red;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_red.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-        &__black{
-          height:50px;
-          background-color:black;
-          border:5px solid #a1a39f;
-          border-style: ridge;
-          cursor:url("../images/spray_black.png"), auto;
-          @media (max-width:800px) {
-            height:30px;
-          }
-        }
-
-      }
-    }
-  }
 }
 
 #over_product{
@@ -581,7 +347,6 @@ a{
   }
   .over_product__button{
     border:1px solid darkgrey;
-    // border-radius: 25%;
     text-align: center;
     height:50px;
     line-height: 50px;
