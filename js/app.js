@@ -18,8 +18,6 @@ $(function() {
     $(".spray_efect").css("height","50px");
   }
 
-
-
   start_rider = setInterval ( () => {
     $(".logo").addClass("logo__animation");
     start_rider2 = setInterval ( () => {
@@ -33,9 +31,12 @@ $(function() {
 
 var body = $("body");
 var vph = $(window).height();
+var vpw = $(window).width();
 body.css("height",vph);
 menu = $(".menu_bar");
 menu.css("height",vph);
+
+// Function menu show/hidden
 
 var clicks = 0;
 $(".menu").on("click",function(){
@@ -59,7 +60,6 @@ else{
 }
 }
 })
-
 
 var position= 0;
 var spray_animation;
@@ -90,7 +90,6 @@ else{
 }, 100);
 }
 
-
 function startSprayAnimationWidth(step,max,color,picture){
   spray_animation = setInterval ( () => {
 
@@ -106,8 +105,6 @@ else{
 }
 }, 100);
 }
-
-var vpw = $(window).width();
 
 $(".frame__pic__color__choice__blue").on("click",function(){
   $('.frame__pic').attr("data-frame","blue");
@@ -264,7 +261,6 @@ else{
 }, 100);
 }
 
-
 $(".wheels__pic__color__choice__blue").on("click",function(){
   $('.wheels__pic').attr("data-wheels","blue");
   $(".spray__animation2").css("margin-top","100px");
@@ -377,7 +373,6 @@ else{
 }
 })
 
-
 var position4= 0;
 var spray_animation4;
 var blue_animation = "blue";
@@ -406,8 +401,6 @@ else{
 }
 }, 100);
 }
-
-
 
 function startSprayAnimationWidth3(step,max,color,picture){
   spray_animation4 = setInterval ( () => {
@@ -537,15 +530,10 @@ else{
 }
 })
 
-
-
 $(".over_product__button").on("click",function(){
   var frame_color = $('.frame__pic').attr("data-frame");
   var wheels_color = $('.wheels__pic').attr("data-wheels");
   var steering_wheel_color = $('.steering_wheel__pic').attr("data-steering_wheel");
-  console.log(steering_wheel_color)
-  console.log(wheels_color)
-  console.log(frame_color)
   $(".over_product__text").html("Potwierdź wybór elementów przyciskiem i zobacz jak będzie wyglądał twój rower");
   if(frame_color == "blue" && wheels_color == "blue" &&  steering_wheel_color == "blue"){
     $(".over_product__picture").html("");
@@ -796,8 +784,6 @@ $(".over_product__button").on("click",function(){
   }
 })
 
-var vpw = $(window).width();
-
 var rider_position = 0;
 var rider_animation;
 var rider_step = 120;
@@ -847,8 +833,6 @@ array_number.push(number);
       $(".rider_animation").removeClass("rider_animation__up");
       $(".rider_animation").addClass("rider_animation__down");
     }
-
 });
-
 
 })
